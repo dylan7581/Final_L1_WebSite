@@ -1,0 +1,35 @@
+body {
+	background-image: url(image/Texture.jpg);
+}
+#titre {
+	margin-left : 525px;
+	margin-right : 525px;
+	border-top : none;
+	border-bottom : none;
+	border-left : solid black 5px;
+	border-right : solid black 5px;
+	font-family : URW Chancery L, cursive, Monospace;
+	font-size : 20px;
+}
+hr {
+	clear: both;
+	visibility: hidden;
+}
+#searchbar{
+	position : absolute; 
+	top : 50px ;
+	right : 10px;
+}
+
+#connect{
+	position : absolute; 
+	top : 15px ;
+	right : 10px;
+}
+#categorie ul {
+	display: inline-flex;
+	list-style: none;
+	border-top : solid black 2px;
+	border-bottom : solid black 2px;
+	
+}
