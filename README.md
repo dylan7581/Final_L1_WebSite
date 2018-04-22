@@ -11,25 +11,25 @@ Utiliser compte github sur git:
 Commande ajout du dossier dans dossier personnel:
 
 
-'\~$ git clone https://github.com/dylan7581/Final_L1_WebSite.git'
+	'\~$ git clone https://github.com/dylan7581/Final_L1_WebSite.git'
 
 Voir le Status des fichiers :
 
 
-'\~/Final\_L1_WebSite$ git status'
+	'\~/Final\_L1_WebSite$ git status'
 
 Mettre à jour le dossier:
 
 
-'\~/Final\_L1_WebSite$ git pull'
+	'\~/Final\_L1_WebSite$ git pull'
 
 Publier fichier ajouter dans le dossier:
 
-'''
+	'''
 \~/Final\_L1_WebSite$ git add nom_du_fichier
 \~/Final\_L1_WebSite$ git commit -m "Message qui sera affichier à côté du fichier"'
 \~/Final\_L1_WebSite$ git push
-'''
+	'''
 
 Site d'aide:
 [Aide commande git](https://gist.github.com/acquelito/8596717)
