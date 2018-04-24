@@ -1,35 +1,90 @@
 body {
 	background-image: url(image/Texture.jpg);
+	font-family: 'Droid Serif', serif;
+	color: #2f2f2f;
+	margin: 0px;
+	padding: 0px;
+}
+header {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 70px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 70px;
+  margin-bottom: 1px;
+  cursor: pointer;
 }
 #titre {
-	margin-left : 525px;
-	margin-right : 525px;
-	border-top : none;
-	border-bottom : none;
-	border-left : solid black 5px;
-	border-right : solid black 5px;
-	font-family : URW Chancery L, cursive, Monospace;
-	font-size : 20px;
+  text-align: center;
 }
-hr {
+#titre hr {
 	clear: both;
 	visibility: hidden;
 }
-#searchbar{
-	position : absolute; 
-	top : 50px ;
-	right : 10px;
+#connect input[type=submit] {
+	background-color: transparent;
+	display:inline-block;
+	cursor:pointer;
+	color: #2f2f2f;
+	padding: 5px 30px;
+	margin: 3px 4px;
+	border: 2px solid #2f2f2f;
+	border-radius: 20px;
+}
+#connect input[type=submit]:active, input[type=submit]:active , #categorie td:active, header:active{
+	position:relative;
+	top:1px;
+}
+#connect input[type=submit]:hover, input[type=submit]:hover, #categorie td:hover {
+	background-color: #2f2f2f;
+	color: #d2cece;
+	cursor: pointer;
+}
+.research_buttom {
+	background-color: transparent;
+	display:inline-block;
+	cursor:pointer;
+	color: #2f2f2f;
+	padding: 5px 20px;
+	margin: 3px 4px 0px 0px;
+	border: 2px solid #2f2f2f;
+	border-radius: 0px 10px 10px 0px;
+}
+.research_bar {
+	border-radius: 5px 0px 0px 5px;
+	border: 2px solid #2f2f2f;
+	padding: 5px 20px;
+	background-color: transparent;
+}
+#searchbar {
+	position: absolute; 
+	top: 60px;
+	right: 10px;
 }
 
-#connect{
-	position : absolute; 
-	top : 15px ;
-	right : 10px;
+#connect {
+	position: absolute; 
+	top: 15px;
+	right: 10px;
 }
-#categorie ul {
-	display: inline-flex;
-	list-style: none;
-	border-top : solid black 2px;
-	border-bottom : solid black 2px;
-	
+#info {
+	position: absolute; 
+	top: 10px;
+	left: 1px;
+	border-radius: 5px;
+	border: 2px solid #2f2f2f;
+	width: 373px;
+	height: 83px;
+	border-left-width: 2px;
+	margin-left: 9px;
+}
+#categorie hr {
+	border: solid #2f2f2f 1px;
+	margin: 0px;
+}
+#categorie td {
+	text-align: center;
+	font-size: 16px;
+	padding: 0px 4px 0px 4px;
 }

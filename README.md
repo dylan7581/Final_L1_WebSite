@@ -28,3 +28,4 @@ Publier fichier ajouter dans le dossier:
 Site d'aide:
 
 [Aide commande git](https://gist.github.com/acquelito/8596717)
+[Une aide plus fournis](https://git-scm.com/book/fr/v2)
