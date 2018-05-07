@@ -41,6 +41,9 @@ header {
 	color: #d2cece;
 	cursor: pointer;
 }
+a {
+	color: #2f2f2f;
+}
 .research_buttom {
 	background-color: transparent;
 	display:inline-block;
@@ -78,6 +81,7 @@ header {
 	height: 83px;
 	border-left-width: 2px;
 	margin-left: 9px;
+	overflow: auto;
 }
 #categorie hr {
 	border: solid #2f2f2f 1px;
