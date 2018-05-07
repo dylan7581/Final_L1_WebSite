@@ -23,9 +23,16 @@ Publier fichier ajouter dans le dossier:
 
 	~/Final_L1_WebSite$ git add nom_du_fichier
 	~/Final_L1_WebSite$ git commit -m "Message qui sera affichier à côté du fichier"
+	
+	## Même commande que les 2 précédentes, mais sert à publier TOUT les fichiers modifiés ##
+	~/Final_L1_WebSite$ git commit -a -m "Message qui sera affichier à côté du fichier"
+	##-------------------------------------------------------------------------------------##
+	
 	~/Final_L1_WebSite$ git push
 
 Site d'aide:
 
 [Aide commande git](https://gist.github.com/acquelito/8596717)
+
+
 [Une aide plus fournis](https://git-scm.com/book/fr/v2)
