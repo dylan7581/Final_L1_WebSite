@@ -1,3 +1,1 @@
-<?php
-
-?>
+/*Page qui permet de s'inscrire ou de s'identifier*/
