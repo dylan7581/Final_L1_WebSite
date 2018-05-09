@@ -3,7 +3,6 @@
 
 	include('model.inc.php');
 	if(isset($_POST['Connect']{
-		include("sql_connect.php");
 		echo "<form method='post' action=''";
 		echo "<p>
 			<label for='id'>Identifiant</label> 
@@ -18,11 +17,11 @@
 		$id = $_POST['id'];
 		$mdp = $_POST['mdp'];
 		$requete = "SELECT * FROM Users WHERE id = '$id' ";
+		include("sql_connect.php");
 		$connect = mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
 	}
 	else if(isset($_POST['Inscri']{
-		include("sql_connect.php");
 		echo "<form method='post' action=''";
 		echo "<p> Identifiant: </p> <input type='text' name='id' /> <br />";
 		echo "<p> Mot de passe: </p> <input type='password' name='mdp' /> <br />";
@@ -32,7 +31,9 @@
 		echo "<p> Courriel: </p> <input type='email' name='email' /> <br />";
 		echo "<input type ='submit' value='S\'inscrire' name='inscrire' />";
 		echo "</form>";
+		include("sql_connect.php");
 		mysqli_close($connexion);
+	}
 	else{
 		echo "<p>Erreur</p>";
 	}
