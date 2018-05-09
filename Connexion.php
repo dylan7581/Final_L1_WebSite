@@ -21,7 +21,7 @@
 	}
 	else if(isset($_POST['Inscri']{
 		include("sql_connect.php");
-		echo "<form method='post' action=""";
+		echo "<form method='post' action=''";
 		echo "<p> Identifiant: </p> <input type='text' name='id' /> <br />";
 		echo "<p> Mot de passe: </p> <input type='password' name='mdp' /> <br />";
 		echo "<p> Prénom : </p> <input type='text'  name='firstname' /> <br />";
