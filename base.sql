@@ -1,39 +1,38 @@
 create table Users(
-	id int auto_increment,
-    pseudo varchar(10) NOT NULL,
-	mdp varchar(20) NOT NULL,
-	prenom varchar(45) NOT NULL,
-	nom varchar(45) NOT NULL,
-	tel varchar(15) NOT NULL,
-	adresse varchar(45) NOT NULL,
-	ville varchar(45) NOT NULL,
-	email varchar(45) NOT NULL,
-	id_billet int(255) NOT NULL,
-    article text,
-    commentaire text,
+	id int auto_increment, #identifiant (avec des numéros)
+  pseudo varchar(10) NOT NULL, #nom de l'utilisateur
+	mdp varchar(20) NOT NULL, #son mot de passe
+	prenom varchar(45) NOT NULL, #son prenom
+	nom varchar(45) NOT NULL, #son nom
+	tel varchar(15) NOT NULL, #son numero de telephone
+	adresse varchar(45) NOT NULL, #son adresse 
+	ville varchar(45) NOT NULL, #sa ville
+	email varchar(45) NOT NULL, #son adresse e-mail
+  article text, #les id de ses publications séparées par des points virgules
+  commentaire text, #les id des commentaires séparées par des points virgules
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 create table Commentaire(
-	id int auto_increment,
-    titre varchar(45),
-    commentaire text,
-    date_creation datetime,
+	id int auto_increment, #identifiant (avec des numéros)
+  titre varchar(45), #titre du commentaire
+  commentaire text, # commentaires écrit par l'utilisateur.
+  date_creation datetime, #la date de création du commentaire.
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 create table Comment_admin(
-	id int auto_increment,
-    commentaire text,
-    date_creation datetime,
-    PRIMARY KEY (id)
+	id int auto_increment, #identifiant (avec des numéros)
+  commentaire text, #commentaire écrit par l'administrateur
+  date_creation datetime, #la date de création du commentaire
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 create table article(
-	id int auto_increment,
-    titre varchar(45) NOT NULL,
-    description text,
-    image varchar(255),
-    commentaire text,
+	id int auto_increment, #identifiant (avec des numéros)
+  titre varchar(45) NOT NULL, #titre de la publication
+  description text, #description (fiche technique de l'objet)
+  image varchar(255), #image de l'objet
+  commentaire text, #les id des commentaires séparées par des point virgules
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
