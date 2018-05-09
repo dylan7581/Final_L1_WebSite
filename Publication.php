@@ -1,5 +1,6 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
+include('model.inc.php');
 ?>
 
 <!DOCTYPE hmtl>
