@@ -32,11 +32,21 @@ header {
 	border: 2px solid #2f2f2f;
 	border-radius: 20px;
 }
-#connect input[type=submit]:active, input[type=submit]:active , #categorie td:active, header:active{
+#categorie input[type=submit] {
+	background-color: transparent;
+	display:inline-block;
+	cursor:pointer;
+	color: #2f2f2f;
+	text-align: center;
+	font-size: 16px;
+	padding: 6px;
+	border: none;
+}
+#connect input[type=submit]:active, input[type=submit]:active , #categorie input[type=submit]:active, header:active{
 	position:relative;
 	top:1px;
 }
-#connect input[type=submit]:hover, input[type=submit]:hover, #categorie td:hover {
+#connect input[type=submit]:hover, input[type=submit]:hover, #categorie input[type=submit]:hover {
 	background-color: #2f2f2f;
 	color: #d2cece;
 	cursor: pointer;
@@ -86,9 +96,4 @@ a {
 #categorie hr {
 	border: solid #2f2f2f 1px;
 	margin: 0px;
-}
-#categorie td {
-	text-align: center;
-	font-size: 16px;
-	padding: 0px 4px 0px 4px;
 }
