@@ -28,6 +28,7 @@
 				  <otpion value="hobbies">Loisirs</option>
 				  <option value="services">Services</option>
 				  <option value="vehicules">Véhicules</option>
+			  </select>
 			<p>
 				<input type="text" name="description" value="Description(400 caractères maximum)" maxlength="400" />
 				<br/>
