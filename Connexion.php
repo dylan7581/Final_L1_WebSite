@@ -21,6 +21,7 @@
 	}
 	else if(isset($_POST['Inscri']{
 		include("sql_connect.php");
+		echo "<form method='post' action=""";
 		echo "<p> Identifiant: </p> <input type='text' name='id' /> <br />";
 		echo "<p> Mot de passe: </p> <input type='password' name='mdp' /> <br />";
 		echo "<p> Prénom : </p> <input type='text'  name='firstname' /> <br />";
@@ -28,6 +29,7 @@
 		echo "<p> Numéro de téléphone : </p> <input type='text' maxlength='10' name='tel' /> <br />";
 		echo "<p> Courriel: </p> <input type='email' name='email' /> <br />";
 		echo "<input type ='submit' value='Se connecter' name='connecter' />";
+		echo "</form>";
 		mysqli_close($connexion);
 	else{
 		echo "<p>Erreur</p>";
