@@ -28,7 +28,7 @@
 		echo "<p> Nom : </p> <input type='text' name='lastname' /> <br />";
 		echo "<p> Numéro de téléphone : </p> <input type='text' maxlength='10' name='tel' /> <br />";
 		echo "<p> Courriel: </p> <input type='email' name='email' /> <br />";
-		echo "<input type ='submit' value='Se connecter' name='connecter' />";
+		echo "<input type ='submit' value='S'inscrire' name='inscrire' />";
 		echo "</form>";
 		mysqli_close($connexion);
 	else{
