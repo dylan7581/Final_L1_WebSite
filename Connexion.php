@@ -6,7 +6,7 @@
 		echo "<p>
 			<label for='id'>Identifiant</label> 
 			<input type='text' name='id' id='id' />
-		     </p>
+		     </p> <br />
 		     <p>
 			<label for='mdp'>Mot de passe</label> 
 			<input type='password' name='mdp' id='mdp' />
