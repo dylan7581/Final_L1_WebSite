@@ -30,6 +30,7 @@
 			</p>
 		</div>
 		<div id="categorie">
+			<hr />
 			<input type="submit" value="Animaux" name="animals" />
 			<input type="submit" value="Antiquités/Collection" name="collection" />
 			<input type="submit" value="Electroménager" name="housewear" />
@@ -42,6 +43,7 @@
 			<input type="submit" value="Loisirs" name="hobbies" />
 			<input type="submit" value="Services" name="services" />
 			<input type="submit" value="Véhicules" name ="vehicles" />
+			<hr />
 		</div>
 	</body>
 	<footer>
