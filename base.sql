@@ -31,6 +31,7 @@ create table Comment_admin(
 create table article(
 	id int auto_increment, #identifiant (avec des numéros)
   titre varchar(45) NOT NULL, #titre de la publication
+  categories text, #nom des categories séparées par des point virgules
   description text, #description (fiche technique de l'objet)
   image varchar(255), #image de l'objet
   commentaire text, #les id des commentaires séparées par des point virgules
