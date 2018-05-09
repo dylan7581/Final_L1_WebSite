@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Adventice - Site d'annonce français!</title>
 		<meta charset="utf-8" name="viewport"/>
 		<link rel="stylesheet" type="text/css" href="index_style.css">
 	</head>
@@ -30,20 +29,24 @@
 			</p>
 		</div>
 		<div id="categorie">
-			<hr />
-			<input type="submit" value="Animaux" name="animals" />
-			<input type="submit" value="Antiquités/Collection" name="collection" />
-			<input type="submit" value="Electroménager" name="housewear" />
-			<input type="submit" value="Emploi/Formation" name="work" />
-			<input type="submit" value="Immobilier" name="housing" />
-			<input type="submit" value="Maison" name="house" />
-			<input type="submit" value="Matériel professionnel" name="materials" />
-			<input type="submit" value="Mode/Beauté" name="beauty" />
-			<input type="submit" value="Multimédia" name="multimedia" />
-			<input type="submit" value="Loisirs" name="hobbies" />
-			<input type="submit" value="Services" name="services" />
-			<input type="submit" value="Véhicules" name ="vehicles" />
-			<hr />
+			<hr/>
+			<table>
+				<tr>
+					<td>Animaux</td>
+					<td>Antiquités/Collection</td>
+					<td>Electroménager</td>
+					<td>Emploi/Formation</td>
+					<td>Immobilier</td>
+					<td>Maison</td>
+					<td>Matériel professionnel</td>
+					<td>Mode/Beauté</td>
+					<td>Multimedia</td>
+					<td>Loisirs</td>
+					<td>Services</td>
+					<td>Véhicules</td>
+				</tr>
+			</table>
+			<hr/>
 		</div>
 	</body>
 	<footer>
