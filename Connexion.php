@@ -6,7 +6,7 @@
 	if(isset($_POST['Connect'])){
 		echo "<title>Adventice : Connexion</title>";
 		echo "<form method='post' action=''";
-		echo "<p> Identifiant : </p> <input type='text' name='id'/> <br />";
+		echo "<br/> <p> Identifiant : </p> <input type='text' name='id'/> <br />";
 		echo "<p> Mot de passe : </p> <input type='password' name='mdp' id='mdp' /> <br />";
 		echo "<br /> <input type ='submit' value='Se connecter' name='connecter'";
 		echo "</form>";
@@ -20,7 +20,7 @@
 	else if(isset($_POST['Inscri'])){
 		echo "<title>Adventice : Inscription</title>";
 		echo "<form method='post' action=''";
-		echo "<p> Identifiant: </p> <input type='text' name='id' /> <br />";
+		echo "<br/> <p> Identifiant: </p> <input type='text' name='id' /> <br />";
 		echo "<p> Mot de passe: </p> <input type='password' name='mdp' /> <br />";
 		echo "<p> Prénom : </p> <input type='text'  name='firstname' /> <br />";
 		echo "<p> Nom : </p> <input type='text' name='lastname' /> <br />";
