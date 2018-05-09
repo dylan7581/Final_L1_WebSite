@@ -10,7 +10,8 @@
 		     <p>
 			<label for='mdp'>Mot de passe</label> 
 			<input type='password' name='mdp' id='mdp' />
-		     </p>";
+		     </p>
+		     <input type ='submit' value='Se connecter' name='connecter'";
 		echo "</form>";
 		$id = $_POST['id'];
 		$mdp = $_POST['mdp'];
