@@ -2,7 +2,7 @@
 /*Page qui permet de s'inscrire ou de s'identifier*/ 
 	if(isset($_POST['Connect']{
 		include("sql_connect.php");
-		echo "<form method='post' action=""";
+		echo "<form method='post' action=''";
 		echo "<p>
 			<label for='id'>Identifiant</label> 
 			<input type='text' name='id' id='id' />
