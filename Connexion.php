@@ -1,5 +1,7 @@
 <?php
-/*Page qui permet de s'inscrire ou de s'identifier*/ 
+/*Page qui permet de s'inscrire ou de s'identifier*/
+
+	include('model.inc.php');
 	if(isset($_POST['Connect']{
 		include("sql_connect.php");
 		echo "<form method='post' action=''";
