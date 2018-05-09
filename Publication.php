@@ -42,8 +42,9 @@
   <?php
 	if(isset($_POST['post']){
 		$title = $_POST['title'];
+		$category = $_POST['category'];
 		$description = $_POST['description'];
-		$requete = "INSERT INTO article VALUES ('$title','$description')";
+		$requete = "INSERT INTO article VALUES ('$title','category','$description')";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
