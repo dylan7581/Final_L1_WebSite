@@ -16,7 +16,7 @@
 				<br/>
 			</p>
 			  <select name="category">
-				  <option value="animal">Animaux</option>
+				  <option value="animals">Animaux</option>
 				  <option value="collection">Antiquités/Collection</option>
 				  <option value="housewear">Electroménager</option>
 				  <option value="work">Emploi/Formation</option>
