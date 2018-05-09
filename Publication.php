@@ -28,7 +28,7 @@ include('model.inc.php');
 				  <option value="multimedia">Multimédia</option>
 				  <otpion value="hobbies">Loisirs</option>
 				  <option value="services">Services</option>
-				  <option value="vehicules">Véhicules</option>
+				  <option value="vehicles">Véhicules</option>
 			  </select>
 			<p>
 				<input type="text" name="description" value="Description(400 caractères maximum)" maxlength="400" />
