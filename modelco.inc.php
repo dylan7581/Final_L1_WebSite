@@ -15,9 +15,8 @@
 			<input value="Go" class="research_buttom" name="searchbar" type="submit">
 		</div>
 		<div id="connect">
-			<form method="post" action="Connexion.php">
-				<input name="Inscri" value="Inscription" style="margin-right: 23px;" type="submit">
-				<input name="Connect" value="Connexion" style="margin-right: 21px;" type="submit">
+			<form method="post" action="Déconnexion.php">
+				<input name="disonnect" value="Se déconnecter" style="margin-right: 21px;" type="submit">
 			</form>
 		</div>
 		<div id="info">
