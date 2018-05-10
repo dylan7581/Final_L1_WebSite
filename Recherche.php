@@ -46,15 +46,15 @@
   if(isset($category)){
     include("sql_connect.php");
     if($category == $_POST['searchbar']){
-      $requete = "SELECT * FROM article WHERE id = $category";
+      $requete = "SELECT * FROM article WHERE id LIKE '%$category%'";
       mysqli_query($connexion, $requete);
-      $requete = "SELECT * FROM article WHERE titre = $category";
+      $requete = "SELECT * FROM article WHERE titre = '$category'";
       mysqli_query($connexion, $requete);
-      $requete = "SELECT * FROM article WHERE categories = $category";
+      $requete = "SELECT * FROM article WHERE categories LIKE '%$category%'";
       mysqli_query($connexion, $requete);
-      $requete = "SELECT * FROM article WHERE description = $category";
+      $requete = "SELECT * FROM article WHERE description LIKE '%$category%'";
       mysqli_query($connexion, $requete);
-      $requete = "SELECT * FROM article WHERE commentaire = $category";
+      $requete = "SELECT * FROM article WHERE commentaire LIKE '%$category%'";
       mysqli_query($connexion, $requete);
     }
     else{
