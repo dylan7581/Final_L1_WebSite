@@ -1,4 +1,5 @@
 <?php
+session_start();
 /* remplacer :
  * "serveur" par le nom du serveur de bases de données
  * "login" par le l'identifiant sur le serveur
