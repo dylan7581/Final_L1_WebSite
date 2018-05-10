@@ -1,7 +1,12 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
 session_start();
-include('model.inc.php');
+if (isset($_SESSION['connect']){
+    include("modelco.inc.php");
+}
+else{
+    include("model.inc.php");
+}
 ?>
 
 <!DOCTYPE hmtl>
