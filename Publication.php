@@ -1,12 +1,12 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
 session_start();
-if (isset($_SESSION["confirm"])){
+if(isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
-  else{
+else{
     include("model.inc.php");
-  } 
+} 
 ?>
 
 <!DOCTYPE hmtl>
