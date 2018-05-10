@@ -4,7 +4,7 @@
 	include("modelco.inc.php");
 	if(isset($_POST['disconnect'])){
 		include("model.inc.php");
-		$_SESSION["confirm"] = 0;
+		session_destroy();
 	}else{
 		echo "<p> Erreur : déconnexion impossible </p>";
 	}
