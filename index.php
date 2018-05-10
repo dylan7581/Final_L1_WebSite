@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if (isset($_SESSION['connect']){
+	if (isset($_SESSION['connect'])){
    	   include("modelco.inc.php");
 	}
 	else{
