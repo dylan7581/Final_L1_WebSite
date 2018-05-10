@@ -47,7 +47,7 @@
   else if(isset($_POST['searchbar'])){
     $category = $_POST['searchbar'];
   } else {
-    echo "erreur";
+    echo "Erreur : sujet de recherche non compris";
   }
   if(isset($category)){
     include("sql_connect.php");
