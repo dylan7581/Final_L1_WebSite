@@ -39,7 +39,7 @@
 		$requete = "INSERT INTO Users VALUES(null, '$id', '$mdp', '$firstname', '$lastname', '$tel', '$adresse', '$ville', '$email', null, null)";
 		$connect = mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
-		$_SESSION['confirm'] = 1;
+		$_SESSION["confirm"] = 1;
 	} elseif (isset($_POST['connecter'])) {
 		$id = $_POST['id'];
 		$mdp = $_POST['mdp'];
@@ -55,7 +55,7 @@
 			echo "<p>Erreur de connexion <a href='index.php'>Retour à la page d'accueil</a></p>";
 		}
 		mysqli_close($connexion);
-		$_SESSION['confirm'] = 1;
+		$_SESSION["confirm"] = 1;
 }
 	else{
 		echo "<p>Erreur! <a href='index.php'>Retour à la page d'accueil</a></p>";
