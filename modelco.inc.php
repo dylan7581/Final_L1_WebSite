@@ -20,7 +20,7 @@
 		</div>
 		<div id="connect">
 			<form method="post" action="deconnexion.php">
-				<input name="disonnect" value="Se déconnecter" style="margin-right: 21px;" type="submit">
+				<input name="disconnect" value="Se déconnecter" style="margin-right: 21px;" type="submit">
 			</form>
 		</div>
 		<div id="info">
