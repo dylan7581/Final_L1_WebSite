@@ -1,7 +1,7 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
 session_start();
-if (isset($_SESSION['connect']){
+if(isset($_SESSION['connect'])){
     include("modelco.inc.php");
 }
 else{
@@ -54,9 +54,10 @@ else{
 		$title = $_POST['title'];
 		$category = $_POST['category'];
 		$description = $_POST['description'];
-		$requete = "INSERT INTO article VALUES ('$title','$category','$description')";
+		$requete = "INSERT INTO article VALUES (null, '$title','$category','$description', null, null)";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
+		echo "<p>Publication Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
 	}
   ?>
