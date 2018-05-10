@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	if ($_SESSION['$confirm'] == 1){
+	if ($_SESSION['confirm'] == 1){
   	  include("modelco.inc.php");
  	 }
  	 else{
