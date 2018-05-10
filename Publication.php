@@ -1,7 +1,7 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
 session_start();
-if ($_SESSION["confirm"] == 1)){
+if (isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
   else{
