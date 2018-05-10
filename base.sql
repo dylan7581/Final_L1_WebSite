@@ -1,3 +1,5 @@
+create database base_site;
+use base_site;
 create table Users(
 	id int auto_increment, #identifiant (avec des numéros)
   pseudo varchar(10) NOT NULL, #nom de l'utilisateur
@@ -37,3 +39,5 @@ create table article(
   commentaire text, #les id des commentaires séparées par des point virgules
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+select * from Users;
