@@ -57,8 +57,8 @@
     }
     else{
       $requete = "SELECT * FROM article WHERE categories = $category";
-      mysqli_query($connexion, $requete);
+      $resultat = mysqli_query($connexion, $requete);
     }
-    mysqli_close($connexion);
+  mysqli_close($connexion);
   }       
 ?>
