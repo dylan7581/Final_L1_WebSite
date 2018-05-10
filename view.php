@@ -1,6 +1,6 @@
 <!-- Page qui permet de voir un article -->
 <?php
-  if ($_SESSION['confirm'] == 1)){
+  if ($_SESSION['$confirm'] == 1)){
     include("modelco.inc.php");
   }
   else{
