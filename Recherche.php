@@ -56,4 +56,11 @@
       mysqli_query($connexion, $requete);
       $requete = "SELECT * FROM article WHERE commentaire = $category";
       mysqli_query($connexion, $requete);
+    }
+    else{
+      $requete = "SELECT * FROM article WHERE categories = $category";
+      mysqli_query($connexion, $requete);
+    }
+    mysqli_close($connexion);
+  }       
 ?>
