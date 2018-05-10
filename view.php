@@ -1,6 +1,11 @@
 <!-- Page qui permet de voir un article -->
 <?php
-include('model.inc.php');
+  if ($_SESSION['confirm'] == 1)){
+    include("modelco.inc.php");
+  }
+  else{
+    include("model.inc.php");
+  } 
 $requete = "SELECT * FROM article WHERE id = '$id'";
 $connect = mysqli_query($connexion, $requete);
 $info = mysqli_fetch_array($connect);
