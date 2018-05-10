@@ -59,6 +59,7 @@
       $requete = "SELECT * FROM article WHERE categories = $category";
       $resultat = mysqli_query($connexion, $requete);
     }
+  echo $resultat;
   mysqli_close($connexion);
   }       
 ?>
