@@ -19,7 +19,7 @@
 			<input value="Go" class="research_buttom" name="searchbar" type="submit">
 		</div>
 		<div id="connect">
-			<form method="post" action="Déconnexion.php">
+			<form method="post" action="deconnexion.php">
 				<input name="disonnect" value="Se déconnecter" style="margin-right: 21px;" type="submit">
 			</form>
 		</div>
