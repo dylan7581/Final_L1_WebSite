@@ -18,9 +18,6 @@ include('model.inc.php');
 					<input type="text" name="title" placeholder="Titre (50 caractères maximum)" maxlength="50" />
 					<br/>
 					<br/>
-					<input type="file" name="image" accept=".jpeg, .jpg, .png">
-					<br/>
-					<br/>
 				  <select name="category">
 					  <option value="animals">Animaux</option>
 					  <option value="collection">Antiquités/Collection</option>
