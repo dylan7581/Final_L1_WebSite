@@ -33,24 +33,26 @@
 		</div>
 		<div id="categorie">
 			<hr>
-			<table>
-				<tbody>
-					<tr>
-						<td><input value="Animaux" name="animals" type="submit" href="Recherche.php"></td>
-						<td><input value="Antiquités/Collection" name="collection" type="submit" href="Recherche.php"></td>
-						<td><input value="Electroménager" name="housewear" type="submit" href="Recherche.php"></td>
-						<td><input value="Emploi/Formation" name="work" type="submit" href="Recherche.php"></td>
-						<td><input value="Immobilier" name="housing" type="submit" href="Recherche.php"></td>
-						<td><input value="Maison" name="home" type="submit" href="Recherche.php"></td>
-						<td><input value="Matériel professionnel" name="materials" type="submit" href="Recherche.php"></td>
-						<td><input value="Mode/Beauté" name="beauty" type="submit" href="Recherche.php"></td>
-						<td><input value="Multimédia" name="multimedia" type="submit" href="Recherche.php"></td>
-						<td><input value="Loisirs" name="hobbies" type="submit" href="Recherche.php"></td>
-						<td><input value="Services" name="services" type="submit" href="Recherche.php"></td>
-						<td><input value="Véhicules" name="vehicles" type="submit" href="Recherche.php"></td>
-					</tr>
-				</tbody>
-			</table>
+			<form method="post" action="Recherche.php">
+				<table>
+					<tbody>
+						<tr>
+							<td><input value="Animaux" name="animals" type="submit"></td>
+							<td><input value="Antiquités/Collection" name="collection" type="submit"></td>
+							<td><input value="Electroménager" name="housewear" type="submit"></td>
+							<td><input value="Emploi/Formation" name="work" type="submit"></td>
+							<td><input value="Immobilier" name="housing" type="submit"></td>
+							<td><input value="Maison" name="home" type="submit"></td>
+							<td><input value="Matériel professionnel" name="materials" type="submit"></td>
+							<td><input value="Mode/Beauté" name="beauty" type="submit"></td>
+							<td><input value="Multimédia" name="multimedia" type="submit"></td>
+							<td><input value="Loisirs" name="hobbies" type="submit"></td>
+							<td><input value="Services" name="services" type="submit"></td>
+							<td><input value="Véhicules" name="vehicles" type="submit"></td>
+						</tr>
+					</tbody>
+				</table>
+			  </form>
 			<hr>
 		</div>
 	</body>
