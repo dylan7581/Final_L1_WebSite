@@ -3,9 +3,9 @@
 	if (isset($_SESSION["confirm"])){
   	  include("modelco.inc.php");
  	 }
- 	 else{
+ 	else{
   	  include("model.inc.php");
- 	 } 
+ 	} 
 	echo "<title>Adventice - Site d'annonce français!</title>";
 	echo "<h1 align='center'>Bienvenue sur le site d'annonce Adventice</h1>";
 ?>
