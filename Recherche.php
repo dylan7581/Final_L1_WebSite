@@ -1,6 +1,12 @@
 <?php
 /*Page qui permet de rechercher, elle souvre lorsqu'on recherche ou lorsqu'on clique sur une des catégories*/
-  session_start()
+  session_start();
+  if (isset($_SESSION['connect']){
+    include("modelco.inc.php");
+  }
+  else{
+    include("model.inc.php");
+  } 
   $category;
   if(isset($_SESSION['animals']){
     $category = $_SESSION['animals'];
