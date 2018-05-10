@@ -7,4 +7,5 @@ $info = mysqli_fetch_array($connect);
 echo "<p>$info[2]</p>";
 echo "<title>$info[1]</title>";
 echo "<h2>$info[1]</h2>";
+
 ?>

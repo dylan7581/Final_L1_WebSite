@@ -7,5 +7,5 @@
     	   include("model.inc.php");
 	}
 	echo "<title>Adventice - Site d'annonce français!</title>";
-	echo "<p></p>";
+	echo "<h1 align='center'>Bienvenue sur le site d'annonce Adventice</h1>";
 ?>
