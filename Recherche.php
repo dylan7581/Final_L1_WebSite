@@ -1,5 +1,6 @@
 <?php
 /*Page qui permet de rechercher, elle souvre lorsqu'on recherche ou lorsqu'on clique sur une des catégories*/
+  session_start()
   $category;
   if(isset($_SESSION['animals']){
     $category = $_SESSION['animals'];
@@ -42,4 +43,17 @@
   } else {
     echo "erreur";
   }
+  if(isset($category)){
+    include("sql_connect.php");
+    if($category == $_POST['searchbar']){
+      $requete = "SELECT * FROM article WHERE id = $category";
+      mysqli_query($connexion, $requete);
+      $requete = "SELECT * FROM article WHERE titre = $category";
+      mysqli_query($connexion, $requete);
+      $requete = "SELECT * FROM article WHERE categories = $category";
+      mysqli_query($connexion, $requete);
+      $requete = "SELECT * FROM article WHERE description = $category";
+      mysqli_query($connexion, $requete);
+      $requete = "SELECT * FROM article WHERE commentaire = $category";
+      mysqli_query($connexion, $requete);
 ?>
