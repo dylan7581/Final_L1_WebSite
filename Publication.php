@@ -1,5 +1,6 @@
 <?php
 /*Page qui permet de publier de nouvelles annonces*/
+session_start();
 include('model.inc.php');
 ?>
 
