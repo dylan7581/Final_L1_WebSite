@@ -1,7 +1,6 @@
 <?php
 /*Page qui permet de s'inscrire ou de s'identifier*/
 	session_start();
-	include('model.inc.php');
 	echo "<link rel='stylesheet' type='text/css' href='Connexion.css'>";
 	echo "<div id='connexion_box'>";
 	if(isset($_POST['Connect'])){
