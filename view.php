@@ -1,7 +1,7 @@
 <!-- Page qui permet de voir un article -->
 <?php
   session_start();
-  if (isset($_SESSION["confirm"])){
+  if(isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
   else{
