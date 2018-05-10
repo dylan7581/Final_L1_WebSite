@@ -1,7 +1,7 @@
 <?php
 /*Page qui permet de rechercher, elle souvre lorsqu'on recherche ou lorsqu'on clique sur une des catégories*/
   session_start();
-  if (isset($_SESSION["confirm"])){
+  if(isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
   else{
