@@ -6,8 +6,9 @@
   }
   else{
     include("model.inc.php");
-  } 
-$requete = "SELECT * FROM article WHERE id = '$id'";
+  }
+$title = $_POST['article'];
+$requete = "SELECT * FROM article WHERE titre = '$title'";
 $connect = mysqli_query($connexion, $requete);
 $info = mysqli_fetch_array($connect);
 echo "<p>$info[2]</p>";
