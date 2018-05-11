@@ -78,23 +78,6 @@
         echo "</div>";
       }
     }
-    else if(isset($user)){
-      include("sql_connect.php");
-      $requete = "SELECT * FROM article WHERE auteur = '$user'";
-      $resultat = mysqli_query($connexion, $requete);
-      echo mysqli_error($connexion);
-      $nrows = mysqli_num_rows($resultat);
-      echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
-      for($k = 0; $k < $nrows; $k++){
-        $article = mysqli_fetch_array($resultat);
-        echo "<div id='pub_article style='width: 640px;'>";
-        echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\"/>";
-        echo "</form>";
-        echo "<p>$article[2]</p>";
-        echo "</div>";
-      }
-    }
     else{
       include("sql_connect.php");
       $requete = "SELECT * FROM article WHERE categories = '$category'";
@@ -113,8 +96,23 @@
         echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
+     }
+  } else if(isset($user)){
+      include("sql_connect.php");
+      $requete = "SELECT * FROM article WHERE auteur = '$user'";
+      $resultat = mysqli_query($connexion, $requete);
+      echo mysqli_error($connexion);
+      $nrows = mysqli_num_rows($resultat);
+      echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
+      for($k = 0; $k < $nrows; $k++){
+        $article = mysqli_fetch_array($resultat);
+        echo "<div id='pub_article style='width: 640px;'>";
+        echo "<form method='get' action='view.php'>";
+        echo "<input type='submit'name='article'value=\"$article[1]\"/>";
+        echo "</form>";
+        echo "<p>$article[2]</p>";
+        echo "</div>";
       }
-    }
   echo $resultat;
   mysqli_close($connexion);
   }       
