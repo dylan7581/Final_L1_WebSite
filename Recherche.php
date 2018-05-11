@@ -76,7 +76,7 @@
       }
     }
     else if(isset($user)){
-      requete = "SELECT * FROM article WHERE auteur = '$user'";
+      $requete = "SELECT * FROM article WHERE auteur = '$user'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
       $nrows = mysqli_num_rows($resultat);
