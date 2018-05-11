@@ -7,6 +7,7 @@
   }
   else{
     include("model.inc.php");
+    $_SESSION['username'] = "anonyme";
   } 
   $category;
   if(isset($_POST['animals'])){
