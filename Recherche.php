@@ -77,6 +77,7 @@
         echo "</form>";
         echo "</div>";
       }
+	  mysqli_close($connexion);
     }
     else{
       include("sql_connect.php");
@@ -97,7 +98,9 @@
         echo "</form>";
         echo "</div>";
      }
-  } else if(isset($user)){
+	 mysqli_close($connexion);
+    } 
+  }	else if(isset($user)){
       include("sql_connect.php");
       $requete = "SELECT * FROM article WHERE auteur = '$user'";
       $resultat = mysqli_query($connexion, $requete);
@@ -113,9 +116,8 @@
         echo "<p>$article[2]</p>";
         echo "</div>";
       }
+	  mysqli_close($connexion);
     } else {
       echo "<p>Erreur : sujet non défini</p>";
     }
-  mysqli_close($connexion);
-  }       
 ?>
