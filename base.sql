@@ -40,4 +40,5 @@ create table article(
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+select * from article;
 select * from Users;

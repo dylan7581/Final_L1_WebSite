@@ -20,7 +20,7 @@ else{
 	  <body>
 	  	<div id="publi">
 	  		<br/>
-			  <form method="post" action="">
+			  <form method="post" action="Publication.php">
 					<input type="text" name="title" placeholder="Titre (50 caractères maximum)" maxlength="50" />
 					<br/>
 					<br/>
@@ -54,7 +54,7 @@ else{
 		$title = $_POST['title'];
 		$category = $_POST['category'];
 		$description = $_POST['description'];
-		$requete = "INSERT INTO article VALUES (null, '$title','$category','$description', null, null)";
+		$requete = "INSERT INTO article VALUES(null, '$title','$category','$description', null, null)";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);
 		mysqli_close($connexion);

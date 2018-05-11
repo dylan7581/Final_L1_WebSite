@@ -52,12 +52,16 @@
   if(isset($category)){
     include("sql_connect.php");
     if($category == $_POST['searchbar']){
-      $requete = "SELECT * FROM article WHERE id LIKE '%$category%' OR titre LIKE '%$category%' OR categories = '$category' OR description LIKE '%$category%' OR commentaire LIKE '%$category%'";
+      $requete = "SELECT * FROM article WHERE titre LIKE '%$category%' OR categories = '$category' OR description LIKE '%$category%'";
       $resultat = mysqli_query($connexion, $requete);
+      $article_affiche = mysqli_fetch_array($resultat);
+      echo "<p>$article_affiche['titre']</p>";
     }
     else{
       $requete = "SELECT * FROM article WHERE categories = $category";
       $resultat = mysqli_query($connexion, $requete);
+      $article_affiche = mysqli_fetch_array($resultat);
+      echo "<p>$article_affiche['titre']</p>";
     }
   echo $resultat;
   mysqli_close($connexion);

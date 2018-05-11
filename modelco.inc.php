@@ -19,8 +19,11 @@
 			<input value="Go" class="research_buttom" name="searchbar" type="submit">
 		</div>
 		<div id="connect">
+			<form method="post" action="Publication.php" style="right: 190px; position: absolute;">
+				<input name="publica" value="Publier" type="submit">
+			</form>
 			<form method="post" action="deconnexion.php">
-				<input name="disconnect" value="Se déconnecter" style="margin-right: 21px;" type="submit">
+				<input name="disconnect" value="Se déconnecter" type="submit">
 			</form>
 		</div>
 		<div id="info">
