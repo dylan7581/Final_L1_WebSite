@@ -63,8 +63,14 @@
       $requete = "SELECT * FROM article WHERE categories = '$category'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
-      $article_affiche = mysqli_fetch_array($resultat);
-      echo "<p>$article_affiche[1]</p>";
+      /*$article_affiche = mysqli_fetch_array($resultat);
+      echo "<p>$article_affiche[1]</p>"; */
+      $k = 0;
+      while (k  < mysqli_num_rows($resultat)){
+        $article = mysqli_fect_array($resultat);
+        echo "<p>$article[1]</p>";
+        ++$k;
+      }
     }
   echo $resultat;
   mysqli_close($connexion);
