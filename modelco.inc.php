@@ -42,7 +42,7 @@
 				<table>
 					<tbody>
 						<tr>
-							<td><input value="Animaux" name="animals" type="submit"></td>
+							<td><input value="Animaux" name="animaux" type="submit"></td>
 							<td><input value="Antiquités/Collection" name="collection" type="submit"></td>
 							<td><input value="Electroménager" name="housewear" type="submit"></td>
 							<td><input value="Emploi/Formation" name="work" type="submit"></td>

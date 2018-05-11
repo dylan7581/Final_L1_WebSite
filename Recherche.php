@@ -1,7 +1,6 @@
 <?php
 /*Page qui permet de rechercher, elle souvre lorsqu'on recherche ou lorsqu'on clique sur une des catégories*/
   session_start();
-  
   if(isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
@@ -10,8 +9,8 @@
     $_SESSION['username'] = "anonyme";
   }
   $category;
-  if(isset($_POST['animals'])){
-    $category = "animals";
+  if(isset($_POST['animaux'])){
+    $category = "animaux";
   }
   else if(isset($_POST['collection'])){
     $category = "colection";
@@ -55,6 +54,7 @@
   else {
     echo "Erreur : sujet de recherche non compris";
   }
+  echo "<link rel='stylesheet' type='text/css' href='Recherche.css'>";
   if(isset($category)){
     include("sql_connect.php");
     if($category == $_POST['research']){
@@ -65,12 +65,12 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div class='pub_article'>";
+        echo "<div id='pub_article'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\"/>";
+        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;'/>";
         echo "</form>";
-        echo "<p>$article[2]</p>";
-        echo "<form method='post' action=''>";
+        echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
+        echo "<form method='post' action='' style='margin-left:69%;'>";
         echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
@@ -84,7 +84,7 @@
       echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div class='pub_article'>";
+        echo "<div id='pub_article>";
         echo "<form method='get' action='view.php'>";
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
@@ -100,12 +100,12 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div>";
+        echo "<div id='pub_article'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\"/>";
+        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;'/>";
         echo "</form>";
-        echo "<p>$article[2]</p>";
-        echo "<form method='post' action=''>";
+        echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
+        echo "<form method='post' action='' style='margin-left:69%;'>";
         echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
