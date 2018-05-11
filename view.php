@@ -9,6 +9,7 @@
     $_SESSION['username'] = "anonyme";
   }
 $title = $_GET['article'];
+include("sql_connect.php");
 $requete = "SELECT * FROM article WHERE titre = '$title'";
 $connect = mysqli_query($connexion, $requete);
 echo mysqli_error($connexion);
