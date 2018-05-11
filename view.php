@@ -7,7 +7,7 @@
   else{
     include("model.inc.php");
   }
-$title = $_POST['article'];
+$title = $_GET['article'];
 echo $title;
 $requete = "SELECT * FROM article WHERE titre = '$title'";
 $connect = mysqli_query($connexion, $requete);
