@@ -8,7 +8,10 @@
   else{
     include("model.inc.php");
     $_SESSION['username'] = "anonyme";
-  } 
+  }
+  if(isset($_POST['user'])){
+    $user = $_POST['user'])){
+  }
   $category;
   if(isset($_POST['animals'])){
     $category = "animals";
@@ -59,6 +62,25 @@
       echo mysqli_error($connexion);
       $nrows = mysqli_num_rows($resultat);
       echo "<p>$nrows résultats compatibles</p>";
+      for($k = 0; $k < $nrows; $k++){
+        $article = mysqli_fetch_array($resultat);
+        echo "<div class='pub_article'>";
+        echo "<form method='get' action='view.php'>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
+        echo "</form>";
+        echo "<p>$article[2]</p>";
+        echo "</div>";
+        echo "<form method='get' action=''>";
+        echo "<input type='submit'name='user'value='$_SESSION['username']'/>";
+        echo "</form>";
+      }
+    }
+    else if(isset($user)){
+      requete = "SELECT * FROM article WHERE auteur = '$user'";
+      $resultat = mysqli_query($connexion, $requete);
+      echo mysqli_error($connexion);
+      $nrows = mysqli_num_rows($resultat);
+      echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<div class='pub_article'>";
