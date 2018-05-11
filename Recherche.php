@@ -58,8 +58,8 @@
   }
   echo "<link rel='stylesheet' type='text/css' href='Recherche.css'>";
   if(isset($category)){
-    include("sql_connect.php");
     if($category == $_POST['research']){
+      include("sql_connect.php");
       $requete = "SELECT * FROM article WHERE titre LIKE '%$category%' OR description LIKE '%$category%'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
@@ -79,6 +79,7 @@
       }
     }
     else if(isset($user)){
+      include("sql_connect.php");
       $requete = "SELECT * FROM article WHERE auteur = '$user'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
@@ -95,6 +96,7 @@
       }
     }
     else{
+      include("sql_connect.php");
       $requete = "SELECT * FROM article WHERE categories = '$category'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
