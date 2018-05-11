@@ -17,7 +17,7 @@ echo "<p>$info[2]</p>";
 echo "<title>$info[1]</title>";
 echo "<h2 id='titre'>$info[1]</h2>";
 echo "<form method='post' action='Recherche.php'>";
-echo "<input type='submit' name='user' value='$article[6]'/>";
+echo "<input type='submit' name='user' value=\"$article[6]\"/>";
 echo "</form>";
 echo "<p id='description'>$info[3]</p>";
 ?>
