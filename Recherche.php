@@ -67,7 +67,7 @@
         $article = mysqli_fetch_array($resultat);
         echo "<div class='pub_article'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value='addslashes($article[1])'/>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
         echo "<form method='get' action=''>";
