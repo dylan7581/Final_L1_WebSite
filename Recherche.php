@@ -106,14 +106,14 @@
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
       $nrows = mysqli_num_rows($resultat);
-      echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
+      echo "<p>$nrows annonces de \"$user\".</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div id='pub_article style='width: 640px;'>";
+        echo "<div id='pub_article' style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\"/>";
+        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;/>";
         echo "</form>";
-        echo "<p>$article[2]</p>";
+        echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
         echo "</div>";
       }
 	  mysqli_close($connexion);

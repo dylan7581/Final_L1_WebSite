@@ -1,5 +1,5 @@
 #pub_article {
-	inline-block; 
+	position: inline-block; 
 	float: left; 
 	margin-left:10px;
 }
