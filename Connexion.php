@@ -31,14 +31,14 @@
 		echo "<input type ='submit' value=\"S'inscrire\" name='inscrire' />";
 		echo "</form>";
 	} elseif(isset($_POST['inscrire'])) {
-		if($_POST['id'] != addslashes($_POST['id'])){
-		  echo "<title>Adventice : Erreur d'inscription</title>";
-		  echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
+		/*if($_POST['id'] != addslashes($_POST['id'])){
+		  *echo "<title>Adventice : Erreur d'inscription</title>";
+		  *echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
 		}
-		else{
+		else{*/
 		echo "<title>Adventice : Inscription Réussie</title>";
 		echo "<p>Inscription Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
-		$id= $_POST['id']; 
+		$id= mysqli_real_escape_string($connexion, $_POST['id']);
 		$mdp= $_POST['mdp']; 
 		$firstname= $_POST['firstname']; 
 		$lastname= $_POST['lastname']; 
@@ -51,7 +51,7 @@
 		$connect = mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
 		$_SESSION["confirm"] = 1;
-		}
+		/*}*/
 	} elseif (isset($_POST['connecter'])) {
 		$id = $_POST['id'];
 		$mdp = $_POST['mdp'];
