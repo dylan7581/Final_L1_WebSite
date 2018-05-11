@@ -4,7 +4,7 @@
 	if(isset($_SESSION['confirm'])){
 		include("modelco.inc.php");
 		echo "<p>Erreur : utilsateur déjà connecté</p>";
-		echo "<a href="index.php">Retour à la page principale </a>";
+		echo "<a href='index.php'>Retour à la page principale </a>";
 	}
 	else{
 	include("model.inc.php");
