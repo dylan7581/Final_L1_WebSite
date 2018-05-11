@@ -65,9 +65,10 @@
       echo mysqli_error($connexion);
       /*$article_affiche = mysqli_fetch_array($resultat);
       echo "<p>$article_affiche[1]</p>"; */
+      echo "'mysqli_num_rows($resultat)' résultats compatibles";
       $k = 0;
       while (k  < mysqli_num_rows($resultat)){
-        $article = mysqli_fect_array($resultat);
+        $article = mysqli_fetch_array($resultat);
         echo "<p>$article[1]</p>";
         ++$k;
       }
