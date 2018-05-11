@@ -113,7 +113,9 @@
         echo "<p>$article[2]</p>";
         echo "</div>";
       }
-  echo $resultat;
+    } else {
+      echo "<p>Erreur : sujet non défini</p>";
+    }
   mysqli_close($connexion);
   }       
 ?>
