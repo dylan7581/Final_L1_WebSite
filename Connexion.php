@@ -1,6 +1,12 @@
 <?php
 /*Page qui permet de s'inscrire ou de s'identifier*/
 	session_start();
+	if(isset($_SESSION['confirm'])){
+		include("modelco.inc.php");
+		echo "<p>Erreur : utilsateur déjà connecté</p>";
+		echo "<a href="index.php">Retour à la page principale </a>";
+	}
+	else{
 	include("model.inc.php");
 	echo "<link rel='stylesheet' type='text/css' href='Connexion.css'>";
 	echo "<div id='connexion_box'>";
@@ -62,9 +68,10 @@
 		}
 		mysqli_close($connexion);
 		$_SESSION["confirm"] = 1;
-}
-	else{
+	 }
+	 else{
 		echo "<p>Erreur! <a href='index.php'>Retour à la page d'accueil</a></p>";
+	 }
+	 echo "</div>";
 	}
-	echo "</div>";
 ?>
