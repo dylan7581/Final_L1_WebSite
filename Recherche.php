@@ -9,40 +9,40 @@
   } 
   $category;
   if(isset($_POST['animals'])){
-    $category = $_POST['animals'];
+    $category = "animals";
   }
   else if(isset($_POST['collection'])){
-    $category = $_POST['collection'];
+    $category = "colection";
   }
   else if(isset($_POST['housewear'])){
-    $category = $_POST['housewear'];
+    $category = "housewear";
   }
   else if(isset($_POST['work'])){
-    $category = $_POST['work'];
+    $category = "work";
   }
   else if(isset($_POST['housing'])){
-    $category = $_POST['housing'];
+    $category = "housing";
   }
   else if(isset($_POST['home'])){
-    $category = $_POST['home'];
+    $category = "home";
   }
   else if(isset($_POST['materials'])){
-    $category = $_POST['materials'];
+    $category = "materials";
   }
   else if(isset($_POST['beauty'])){
-    $category = $_POST['beauty'];
+    $category = "beauty";
   }
   else if(isset($_POST['multimedia'])){
-    $category = $_POST['multimedia'];
+    $category = "multimedia";
   }
   else if(isset($_POST['hobbies'])){
-    $category = $_POST['hobbies'];
+    $category = "hobbies";
   }
   else if(isset($_POST['services'])){
-    $category = $_POST['services'];
+    $category = "services";
   }
   else if(isset($_POST['vehicles'])){
-    $category = $_POST['vehicles'];
+    $category = "vehicles";
   }
   else if(isset($_POST['searchbar'])){
     $category = $_POST['searchbar'];
