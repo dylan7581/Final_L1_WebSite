@@ -51,9 +51,9 @@ else{
   
   <?php
 	if(isset($_POST['post'])){
-		$title = $_POST['title'];
-		$category = $_POST['category'];
-		$description = $_POST['description'];
+		$title = stripslashes($_POST['title']);
+		$category = stripslashes($_POST['category']);
+		$description = stripslashes($_POST['description']);
 		$requete = "INSERT INTO article VALUES(null, '$title','$category','$description', null, null)";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);
