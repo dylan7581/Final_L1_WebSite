@@ -33,6 +33,7 @@ create table Comment_admin(
 create table article(
 	id int auto_increment, #identifiant (avec des numéros)
   titre varchar(45) NOT NULL, #titre de la publication
+  auteur varchar(45) NOT NULL,
   categories text, #nom des categories séparées par des point virgules
   description text, #description (fiche technique de l'objet)
   image varchar(255), #image de l'objet
@@ -42,3 +43,4 @@ create table article(
 
 select * from article;
 select * from Users;
+SELECT * FROM article WHERE titre LIKE '%test%' OR categories = 'test' OR description LIKE '%test%'

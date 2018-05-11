@@ -76,7 +76,7 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div class='pub_article'>";
+        echo "<div>";
         echo "<form method='post' action='view.php'>";
         echo "<input type='submit'name='article'value='$article[1]'/>";
         echo "</form>";
