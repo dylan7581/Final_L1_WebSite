@@ -70,7 +70,7 @@
         echo "</form>";
         echo "<p>$article[2]</p>";
         echo "<form method='get' action=''>";
-        echo "<input type='submit'name='user'value='{$_SESSION['username']}'/>";
+        echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
       }
@@ -105,7 +105,7 @@
         echo "</form>";
         echo "<p>$article[2]</p>";
         echo "<form method='get' action=''>";
-        echo "<input type='submit'name='user'value='{$_SESSION['username']}'/>";
+        echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
       }
