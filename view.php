@@ -21,7 +21,7 @@ echo "<div id='view_article'>";
 echo "<p style='position:absolute;margin-top: 0px;margin-bottom: 0px;'>Catégorie : $info[2]</p>";
 echo "<h2 align='center' style='margin-top: 8px;margin-bottom: 8px;'>$info[1]</h2>";
 echo "<form method='post' action='Recherche.php' id='bouton_view'>";
-echo "<input type='submit' name='user' value='$info[6]' style='display:block; margin:auto;'/>";
+echo "<input type='submit' name='userview' value='$info[6]' style='display:block; margin:auto;'/>";
 echo "</form>";
 echo "<p align='center'>$info[3]</p>";
 echo "</div>";
