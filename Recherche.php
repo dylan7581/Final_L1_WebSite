@@ -59,8 +59,10 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<p>$article[1]</p>";
+        echo "<form method='post' action='view.php'>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
         echo "<p>$article[2]</p>";
+        echo "</form>";
       }
     }
     else{
@@ -71,7 +73,9 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<p>$article[1]</p>";
+        echo "<form method='post' action='view.php'>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
+        echo "</form>";
       }
     }
   echo $resultat;
