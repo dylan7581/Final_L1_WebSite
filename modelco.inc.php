@@ -29,11 +29,19 @@
 			</form>
 		</div>
 		<div id="info">
-			<p>07/05/18 12:29:17 : Première ligne
-					<br>07/05/18 12:30:27 : deuxième ligne
-					<br>07/05/18 12:30:37 : troisième ligne
-					<br>07/05/18 12:30:37 : quatrième ligne
-					<br>07/05/18 12:57:37 : cinquième ligne
+			<p>
+			<?php
+			include("sql_connect.php");
+			$requete = "SELECT * FROM Comment_admin";
+			$resultat = mysqli_query($connexion, $requete);
+			echo mysqli_error($connexion);
+			$nrows = mysqli_num_rows($resultat);
+			for($k = 0; $k < $nrows; $k++){
+				$ligne_admin = mysqli_fetch_array($resultat);
+				echo "$ligne_admin[2] : $ligne_admin[1]<br>";
+			}
+			mysqli_close($connexion);
+			?>
 			</p>
 		</div>
 		<div id="categorie">
