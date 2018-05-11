@@ -56,13 +56,13 @@
       $requete = "SELECT * FROM article WHERE titre LIKE '%$category%' OR categories = '$category' OR description LIKE '%$category%'";
       $resultat = mysqli_query($connexion, $requete);
       $article_affiche = mysqli_fetch_array($resultat);
-      echo "<p>$article_affiche['1']</p>";
+      echo "<p>$article_affiche[1]</p>";
     }
     else{
       $requete = "SELECT * FROM article WHERE categories = $category";
       $resultat = mysqli_query($connexion, $requete);
       $article_affiche = mysqli_fetch_array($resultat);
-      echo "<p>$article_affiche['1']</p>";
+      echo "<p>$article_affiche[1]</p>";
     }
   echo $resultat;
   mysqli_close($connexion);
