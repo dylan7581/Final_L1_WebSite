@@ -20,7 +20,7 @@ else{
 	  <body>
 	  	<div id="publi">
 	  		<br/>
-			  <form method="post" action="">
+			  <form method="post" action="Publication.php">
 					<input type="text" name="title" placeholder="Titre (50 caractères maximum)" maxlength="50" />
 					<br/>
 					<br/>
