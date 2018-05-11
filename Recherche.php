@@ -69,10 +69,10 @@
         echo "<input type='submit'name='article'value='addslashes($article[1])'/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
-        echo "</div>";
         echo "<form method='get' action=''>";
         echo "<input type='submit'name='user'value='{$_SESSION['username']}'/>";
         echo "</form>";
+        echo "</div>";
       }
     }
     else if(isset($user)){
@@ -104,6 +104,9 @@
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
+        echo "<form method='get' action=''>";
+        echo "<input type='submit'name='user'value='{$_SESSION['username']}'/>";
+        echo "</form>";
         echo "</div>";
       }
     }
