@@ -31,14 +31,14 @@
 		echo "<input type ='submit' value=\"S'inscrire\" name='inscrire' />";
 		echo "</form>";
 	} elseif(isset($_POST['inscrire'])) {
-		if($_POST['id'] != stripslashes($_POST['id'])){
+		if($_POST['id'] != addslashes($_POST['id'])){
 		  echo "<title>Adventice : Erreur d'inscription</title>";
 		  echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
 		}
 		else{
 		echo "<title>Adventice : Inscription Réussie</title>";
 		echo "<p>Inscription Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
-		$id= addslashes($_POST['id']); 
+		$id= $_POST['id']; 
 		$mdp= $_POST['mdp']; 
 		$firstname= $_POST['firstname']; 
 		$lastname= $_POST['lastname']; 
