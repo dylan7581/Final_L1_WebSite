@@ -87,7 +87,7 @@
       echo "<p>Annonces de \"'$user'\" ($nrows) </p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div id='pub_article>";
+        echo "<div id='pub_article style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
@@ -104,7 +104,7 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<div id='pub_article'>";
+        echo "<div id='pub_article' style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
         echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;'/>";
         echo "</form>";
