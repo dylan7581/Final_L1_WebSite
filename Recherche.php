@@ -66,8 +66,6 @@
       $requete = "SELECT * FROM article WHERE categories = '$category'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
-      /*$article_affiche = mysqli_fetch_array($resultat);
-      echo "<p>$article_affiche[1]</p>"; */
       $nrows = mysqli_num_rows($resultat);
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
