@@ -62,12 +62,12 @@
 		if($mdp == $test_mdp[0]) {
 			echo "<title>Adventice : Connexion Réussie</title>";
 			echo "<p>Connexion Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
+			$_SESSION["confirm"] = 1;
 		} else {
 			echo "<title>Adventice : Erreur de connexion</title>";
 			echo "<p>Erreur de connexion <a href='index.php'>Retour à la page d'accueil</a></p>";
 		}
 		mysqli_close($connexion);
-		$_SESSION["confirm"] = 1;
 	 }
 	 else{
 		echo "<p>Erreur! <a href='index.php'>Retour à la page d'accueil</a></p>";
