@@ -52,6 +52,7 @@
   if(isset($category)){
     include("sql_connect.php");
     if($category == $_POST['searchbar']){
+      addslashes($category);
       $requete = "SELECT * FROM article WHERE titre LIKE '%$category%' OR categories = '$category' OR description LIKE '%$category%'";
       $resultat = mysqli_query($connexion, $requete);
       $article_affiche = mysqli_fetch_array($resultat);
