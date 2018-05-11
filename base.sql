@@ -43,4 +43,4 @@ create table article(
 
 select * from article;
 select * from Users;
-SELECT * FROM article WHERE titre LIKE '%test%' OR categories = 'test' OR description LIKE '%test%'
+SELECT * FROM article WHERE titre LIKE '%$teste%' OR description LIKE '%$teste%';
