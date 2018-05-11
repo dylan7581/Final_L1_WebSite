@@ -10,7 +10,7 @@
     $_SESSION['username'] = "anonyme";
   }
   if(isset($_POST['user'])){
-    $user = $_POST['user'])){
+    $user = $_POST['user'];
   }
   $category;
   if(isset($_POST['animals'])){
