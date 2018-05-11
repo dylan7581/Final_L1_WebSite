@@ -51,6 +51,7 @@
 		$connect = mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
 		$_SESSION["confirm"] = 1;
+		$_SESSION["username"] = $id;
 		}
 	} elseif (isset($_POST['connecter'])) {
 		$id = $_POST['id'];
@@ -63,6 +64,7 @@
 			echo "<title>Adventice : Connexion Réussie</title>";
 			echo "<p>Connexion Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
 			$_SESSION["confirm"] = 1;
+			$_SESSION["username"] = $id;
 		} else {
 			echo "<title>Adventice : Erreur de connexion</title>";
 			echo "<p>Erreur de connexion <a href='index.php'>Retour à la page d'accueil</a></p>";
