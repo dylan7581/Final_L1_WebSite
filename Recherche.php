@@ -52,7 +52,7 @@
   if(isset($category)){
     include("sql_connect.php");
     if($category == $_POST['searchbar']){
-      $requete = "SELECT * FROM article WHERE (titre LIKE '%$category%') OR (description LIKE '%$category%')";
+      $requete = "SELECT * FROM article WHERE (titre LIKE '%'$category'%') OR (description LIKE '%'$category'%')";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
       $nrows = mysqli_num_rows($resultat);
