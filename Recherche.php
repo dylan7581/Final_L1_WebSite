@@ -9,9 +9,6 @@
     include("model.inc.php");
     $_SESSION['username'] = "anonyme";
   }
-  if(isset($_POST['user'])){
-    $user = $_POST['user'];
-  }
   $category;
   if(isset($_POST['animals'])){
     $category = "animals";
@@ -51,7 +48,11 @@
   }
   else if(isset($_POST['searchbar'])){
     $category = $_POST['research'];
-  } else {
+  }
+  else if(isset($_POST['user'])){
+    $user = $_POST['user'];
+  }
+  else {
     echo "Erreur : sujet de recherche non compris";
   }
   if(isset($category)){
