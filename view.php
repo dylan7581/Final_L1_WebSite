@@ -8,6 +8,7 @@
     include("model.inc.php");
   }
 $title = $_POST['article'];
+echo $title;
 $requete = "SELECT * FROM article WHERE titre = '$title'";
 echo mysqli_error($connexion);
 $connect = mysqli_query($connexion, $requete);
