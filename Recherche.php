@@ -61,9 +61,10 @@
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<div class='pub_article'>";
-        echo "<h2>$article[1]</h2>";
+        echo "<form method='post' action='view.php'>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
+        echo "</form>";
         echo "<p>$article[2]</p>";
-        echo "<p>$article[3]</p>";
         echo "</div>";
       }
     }
@@ -76,9 +77,10 @@
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<div class='pub_article'>";
-        echo "<h2>$article[1]</h2>";
+        echo "<form method='post' action='view.php'>";
+        echo "<input type='submit'name='article'value='$article[1]'/>";
+        echo "</form>";
         echo "<p>$article[2]</p>";
-        echo "<p>$article[3]</p>";
         echo "</div>";
       }
     }
