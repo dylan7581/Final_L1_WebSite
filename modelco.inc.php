@@ -15,8 +15,10 @@
 			<hr class="separation">
 		</div>
 		<div id="searchbar">
+		  <form method="post" action="Recherche.php">	
 			<input name="research" placeholder="Que cherchez-vous..." class="research_bar" type="text">
 			<input value="Go" class="research_buttom" name="searchbar" type="submit">
+		  </form>
 		</div>
 		<div id="connect">
 			<form method="post" action="Publication.php" style="right: 190px; position: absolute;">
