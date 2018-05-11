@@ -70,7 +70,7 @@
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
-        echo "<form method='get' action=''>";
+        echo "<form method='post' action=''>";
         echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
@@ -85,7 +85,7 @@
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<div class='pub_article'>";
-        echo "<form method='get' action='view.php'>";
+        echo "<form method='post' action='view.php'>";
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
@@ -105,7 +105,7 @@
         echo "<input type='submit'name='article'value=\"$article[1]\"/>";
         echo "</form>";
         echo "<p>$article[2]</p>";
-        echo "<form method='get' action=''>";
+        echo "<form method='post' action=''>";
         echo "<input type='submit'name='user'value='$article[6]'/>";
         echo "</form>";
         echo "</div>";
