@@ -71,7 +71,7 @@
         echo "<p>$article[2]</p>";
         echo "</div>";
         echo "<form method='get' action=''>";
-        echo "<input type='submit'name='user'value='$_SESSION['username']'/>";
+        echo "<input type='submit'name='user'value='{$_SESSION['username']}'/>";
         echo "</form>";
       }
     }
