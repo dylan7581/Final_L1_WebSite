@@ -38,7 +38,7 @@
 		else{
 		echo "<title>Adventice : Inscription Réussie</title>";
 		echo "<p>Inscription Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
-		$id= $_POST['id']; 
+		$id= addslashes($_POST['id']); 
 		$mdp= $_POST['mdp']; 
 		$firstname= $_POST['firstname']; 
 		$lastname= $_POST['lastname']; 
