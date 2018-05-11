@@ -65,7 +65,6 @@
 			$_SESSION["confirm"] = 1;
 		} else {
 			echo "<title>Adventice : Erreur de connexion</title>";
-			session_destroy();
 			echo "<p>Erreur de connexion <a href='index.php'>Retour à la page d'accueil</a></p>";
 		}
 		mysqli_close($connexion);
