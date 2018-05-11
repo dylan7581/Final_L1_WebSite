@@ -58,6 +58,6 @@
 		</div>
 	</body>
 	<footer>
-		
+		<a href="contacts.php">Nous contacter</a>
 	</footer>
 </html>
