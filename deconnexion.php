@@ -5,6 +5,7 @@
 		include("model.inc.php");
 		session_destroy();
 	}else{
+		include("modelco.inc.php");
 		echo "<p> Erreur : déconnexion impossible </p>";
 	}
 ?>
