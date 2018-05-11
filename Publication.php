@@ -6,6 +6,7 @@ if(isset($_SESSION["confirm"])){
   }
 else{
     include("model.inc.php");
+    $_SESSION['username'] = "anonyme";
 } 
 ?>
 
@@ -54,7 +55,7 @@ else{
 		$title = addslashes($_POST['title']);
 		$category = addslashes($_POST['category']);
 		$description = addslashes($_POST['description']);
-		$requete = "INSERT INTO article VALUES(null, '$title','$category','$description', null, null)";
+		$requete = "INSERT INTO article VALUES(null, '$title','$category','$description', null, null, '$_SESSION['username'])";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);
 		mysqli_close($connexion);
