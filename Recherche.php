@@ -1,6 +1,7 @@
 <?php
 /*Page qui permet de rechercher, elle souvre lorsqu'on recherche ou lorsqu'on clique sur une des catégories*/
   session_start();
+  
   if(isset($_SESSION["confirm"])){
     include("modelco.inc.php");
   }
@@ -59,10 +60,11 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<form method='post' action='view.php'>";
-        echo "<input type='submit'name='article'value='$article[1]'/>";
+        echo "<div class='pub_article'>";
+        echo "<h2>$article[1]</h2>";
         echo "<p>$article[2]</p>";
-        echo "</form>";
+        echo "<p>$article[3]</p>";
+        echo "</div>";
       }
     }
     else{
@@ -73,9 +75,11 @@
       echo "<p>$nrows résultats compatibles</p>";
       for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
-        echo "<form method='post' action='view.php'>";
-        echo "<input type='submit'name='article'value='$article[1]'/>";
-        echo "</form>";
+        echo "<div class='pub_article'>";
+        echo "<h2>$article[1]</h2>";
+        echo "<p>$article[2]</p>";
+        echo "<p>$article[3]</p>";
+        echo "</div>";
       }
     }
   echo $resultat;
