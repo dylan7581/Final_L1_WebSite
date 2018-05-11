@@ -55,9 +55,9 @@
       $requete = "SELECT * FROM article WHERE titre LIKE '%$category%' OR categories = '$category' OR description LIKE '%$category%'";
       $resultat = mysqli_query($connexion, $requete);
       echo mysqli_error($connexion);
-      $nrows = mysqli_num_rows($resultat)
+      $nrows = mysqli_num_rows($resultat);
       echo "<p>$nrows résultats compatibles</p>";
-      for($k = 0; $k < $nrows, $k++){
+      for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<p>$article[1]</p>";
       }
@@ -68,9 +68,9 @@
       echo mysqli_error($connexion);
       /*$article_affiche = mysqli_fetch_array($resultat);
       echo "<p>$article_affiche[1]</p>"; */
-      $nrows = mysqli_num_rows($resultat)
+      $nrows = mysqli_num_rows($resultat);
       echo "<p>$nrows résultats compatibles</p>";
-      for($k = 0; $k < $nrows, $k++){
+      for($k = 0; $k < $nrows; $k++){
         $article = mysqli_fetch_array($resultat);
         echo "<p>$article[1]</p>";
       }
