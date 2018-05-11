@@ -32,8 +32,8 @@
 		echo "</form>";
 	} elseif(isset($_POST['inscrire'])) {
 		if($_POST['id'] != addslashes($_POST['id'])){
-		  *echo "<title>Adventice : Erreur d'inscription</title>";
-		  *echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
+		  echo "<title>Adventice : Erreur d'inscription</title>";
+		  echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
 		}
 		else{
 		echo "<title>Adventice : Inscription Réussie</title>";
