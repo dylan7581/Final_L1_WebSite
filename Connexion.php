@@ -47,11 +47,18 @@
 		$ville= $_POST['ville']; 
 		$email= $_POST['email'];
 		include("sql_connect.php");
-		$requete = "INSERT INTO Users VALUES(null, '$id', '$mdp', '$firstname', '$lastname', '$tel', '$adresse', '$ville', '$email', null, null)";
+		$requete = "SELECT pseudo, email FROM Users WHERE pseudo = '$id' OR email = '$email'";
 		$connect = mysqli_query($connexion, $requete);
-		mysqli_close($connexion);
-		$_SESSION["confirm"] = 1;
-		$_SESSION["username"] = $id;
+		$donnee = mysqli_fetch_array($resultat);
+		if($donnee[0] == $id || $donnee[1] == $email) {
+			echo "<p>Utilisateur existe déjà!</p>";
+		} else {
+			$requete = "INSERT INTO Users VALUES(null, '$id', '$mdp', '$firstname', '$lastname', '$tel', '$adresse', '$ville', '$email', null, null)";
+			$connect = mysqli_query($connexion, $requete);
+			mysqli_close($connexion);
+			$_SESSION["confirm"] = 1;
+			$_SESSION["username"] = $id;
+		}
 		}
 	} elseif (isset($_POST['connecter'])) {
 		$id = $_POST['id'];
