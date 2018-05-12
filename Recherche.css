@@ -4,7 +4,7 @@
 	margin-left:10px;
 }
 
-#pub_article input[type=submit] {
+#pub_article input[type=submit], #pub_article button {
 	background-color: transparent;
 	display:inline-block;
 	cursor:pointer;
@@ -14,11 +14,11 @@
 	border: 2px solid #2f2f2f;
 	border-radius: 20px;
 }
-#pub_article input[type=submit]:active {
+#pub_article input[type=submit]:active, #pub_article button:active {
 	position:relative;
 	top:1px;
 }
-#pub_article input[type=submit]:hover {
+#pub_article input[type=submit]:hover, #pub_article button:hover {
 	background-color: #2f2f2f;
 	color: #d2cece;
 	cursor: pointer;

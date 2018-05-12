@@ -52,9 +52,9 @@ else{
   
   <?php
 	if(isset($_POST['post'])){
-		$title = addslashes($_POST['title']);
-		$category = addslashes($_POST['category']);
-		$description = addslashes($_POST['description']);
+		$title = htmlentities(addslashes($_POST['title']));
+		$category = htmlentities(addslashes($_POST['category']));
+		$description = htmlentities(addslashes(nl2br($_POST['description'])));
 		$requete = "INSERT INTO article VALUES(null, '$title','$category','$description', null, null, '{$_SESSION['username']}')";
 		include("sql_connect.php");
 		mysqli_query($connexion, $requete);

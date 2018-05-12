@@ -8,13 +8,14 @@
     include("model.inc.php");
     $_SESSION['username'] = "anonyme";
   }
-$title = $_GET['article'];
+$id = $_GET['article'];
 include("sql_connect.php");
-$requete = "SELECT * FROM article WHERE titre = '$title'";
+$requete = "SELECT * FROM article WHERE id = $id";
 $connect = mysqli_query($connexion, $requete);
 echo mysqli_error($connexion);
 $info = mysqli_fetch_array($connect);
 echo mysqli_error($connexion);
+$info[3]=html_entity_decode($info[3]);
 echo "<link rel='stylesheet' type='text/css' href='view.css'>";
 echo "<title>$info[1]</title>";
 echo "<div id='view_article'>";

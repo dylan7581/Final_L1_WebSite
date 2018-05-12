@@ -38,6 +38,7 @@
 			$nrows = mysqli_num_rows($resultat);
 			for($k = 0; $k < $nrows; $k++){
 				$ligne_admin = mysqli_fetch_array($resultat);
+				$ligne_admin[1]= utf8_encode($ligne_admin[1]);
 				echo "$ligne_admin[2] : $ligne_admin[1]<br>";
 			}
 			mysqli_close($connexion);

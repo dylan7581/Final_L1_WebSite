@@ -69,7 +69,7 @@
         $article = mysqli_fetch_array($resultat);
         echo "<div id='pub_article' style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;'/>";
+        echo "<button type='submit'name='article'value='$article[0]' style='float:left;'>$article[1]</button>";
         echo "</form>";
         echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
         echo "<form method='post' action='' style='margin-left:69%;'>";
@@ -90,7 +90,7 @@
         $article = mysqli_fetch_array($resultat);
         echo "<div id='pub_article' style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;'/>";
+        echo "<button type='submit'name='article' value='$article[0]' style='float:left;'>$article[1]</button>";
         echo "</form>";
         echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
         echo "<form method='post' action='' style='margin-left:69%;'>";
@@ -111,7 +111,7 @@
         $article = mysqli_fetch_array($resultat);
         echo "<div id='pub_article' style='width: 640px;'>";
         echo "<form method='get' action='view.php'>";
-        echo "<input type='submit'name='article'value=\"$article[1]\" style='float:left;/>";
+        echo "<button type='submit' name='article' value='$article[0]' style='float:left'>$article[1]</button>";
         echo "</form>";
         echo "<p style='margin-left:7%;margin-top: 9px; float:left;'>$article[2]</p>";
         echo "</div>";

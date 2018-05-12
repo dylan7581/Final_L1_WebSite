@@ -44,4 +44,5 @@ create table article(
 select * from article;
 select * from Users;
 select * from Comment_admin;
-INSERT INTO Comment_admin VALUES(null, "mise à jour en 2020", getdate());
+INSERT INTO Comment_admin VALUES(null, "maintenance le 2018-07-30.", NOW());
+delete from Comment_admin where id <= 4;
