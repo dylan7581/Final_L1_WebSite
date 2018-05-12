@@ -20,10 +20,10 @@
 	} else if(isset($_POST['Inscri'])){
 		echo "<title>Adventice : Inscription</title>";
 		echo "<form method='post' action='Connexion.php'";
-		echo "<br/> <p> Identifiant: </p> <input type='text' name='id' /> <br />";
-		echo "<p> Mot de passe: </p> <input type='password' name='mdp' /> <br />";
-		echo "<p> Prénom: </p> <input type='text' name='firstname' /> <br />";
-		echo "<p> Nom: </p> <input type='text' name='lastname' /> <br />";
+		echo "<br/> <p> Identifiant: </p> <input type='text' name='id' maxlength='40'/> <br />";
+		echo "<p> Mot de passe: </p> <input type='password' name='mdp' maxlength='40'/> <br />";
+		echo "<p> Prénom: </p> <input type='text' name='firstname' maxlength='45'/> <br />";
+		echo "<p> Nom: </p> <input type='text' name='lastname' maxlength='45'/> <br />";
 		echo "<p> Numéro de téléphone: </p> <input type='tel' maxlength='10' name='tel' /> <br />";
 		echo "<p> Adresse: </p> <input type='text' name='adresse' /> <br />";
 		echo "<p> Ville: </p> <input type='text' name='ville' /> <br />";
