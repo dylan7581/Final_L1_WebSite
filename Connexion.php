@@ -36,8 +36,6 @@
 		  echo "<p>Erreur : l'identifiant contient des caractères illégaux</p>";
 		}
 		else{
-		echo "<title>Adventice : Inscription Réussie</title>";
-		echo "<p>Inscription Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
 		$id= $_POST['id'];
 		$mdp= $_POST['mdp']; 
 		$firstname= $_POST['firstname']; 
@@ -49,7 +47,7 @@
 		include("sql_connect.php");
 		$requete = "SELECT pseudo, email FROM Users WHERE pseudo = '$id' OR email = '$email'";
 		$connect = mysqli_query($connexion, $requete);
-		$donnee = mysqli_fetch_array($resultat);
+		$donnee = mysqli_fetch_array($connect);
 		if($donnee[0] == $id || $donnee[1] == $email) {
 			echo "<p>Utilisateur existe déjà!</p>";
 		} else {
@@ -58,6 +56,8 @@
 			mysqli_close($connexion);
 			$_SESSION["confirm"] = 1;
 			$_SESSION["username"] = $id;
+			echo "<title>Adventice : Inscription Réussie</title>";
+			echo "<p>Inscription Réussie! <a href='index.php'>Retour à la page d'accueil</a></p>";
 		}
 		}
 	} elseif (isset($_POST['connecter'])) {
